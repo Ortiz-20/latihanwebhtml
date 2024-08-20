@@ -27,3 +27,12 @@ function greet(name) {
 let message = greet("John"); 
 
 function calculateSquare(number)
+
+let students=["Alice","Bob","Charlie"];
+let car = {brand: "Toyota", model: "Corolla", year: 2020};
+
+console.log(students[0]);
+console.log(fruits[0]);
+
+students.push("angel");
+students.forEach(students => console.log(students))
