@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan Bootstrap</title>
+  <!-- Link to Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Media Query untuk layar di bawah 768px */
+    @media (max-width: 767.98px) {
+      .sidebar {
+        display: none;
+      }
+      h1, h2, p {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .sidebar {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="bg-primary text-white text-center py-3">
+    <h1>Latihan Bootstrap</h1>
+  </header>
+
+  <!-- Navigasi -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Latihan bootstrap</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Lokasi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kegiatan Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Konten Utama dan Sidebar -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Konten Utama -->
+      <main class="col-12 col-md-8">
+        <h2>konten dummy</h2>
+        <p>Ini adalah bagian konten utama yang mengisi sebagian besar layar pada perangkat dengan ukuran sedang ke atas.</p>
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="col-12 col-md-4 sidebar">
+        <h2>Sidebar</h2>
+        <p>Ini adalah bagian sidebar yang mengisi sisa lebar layar pada perangkat dengan ukuran sedang ke atas.</p>
+      </aside>
+    </div>
+  </div>
+
+  <!-- Section with Cards -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-12 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Image 1">
+          <div class="card-body">
+            <h5 class="card-title">Card Title 1</h5>
+            <p class="card-text">This is a short description for the first card.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-12 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Image 2">
+          <div class="card-body">
+            <h5 class="card-title">Card Title 2</h5>
+            <p class="card-text">This is a short description for the second card.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-12 col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Image 3">
+          <div class="card-body">
+            <h5 class="card-title">Card Title 3</h5>
+            <p class="card-text">This is a short description for the third card.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <!-- Kolom 1: Links -->
+        <div class="col-12 col-md-4 mb-3">
+          <h5>Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Home</a></li>
+            <li><a href="#" class="text-white">Lokasi</a></li>
+            <li><a href="#" class="text-white">Kegiatan Kami</a></li>
+            <li><a href="#" class="text-white">About</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom 2: About Us -->
+        <div class="col-12 col-md-4 mb-3">
+          <h5>About Us</h5>
+          <p>Kami memberikan pelayanan bagi anak disabilitas agar dapat memiliki skill yang menunjang kehidupan mereka</p>
+        </div>
+
+        <!-- Kolom 3: Contact Info -->
+        <div class="col-12 col-md-4 mb-3">
+          <h5>Contact Info</h5>
+          <p>Email: slbazzakiyah@gmail.com/p>
+          <p>Phone: 085659960756</p>
+          <p>Address: jl. cijawura hilir II No. 15 kota bandung, indonesia</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (Optional for Navbar Toggle) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
