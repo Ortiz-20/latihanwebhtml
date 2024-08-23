@@ -1,0 +1,92 @@
+/* Aturan untuk body */
+body {
+    background-color: #f0f0f0;
+}
+
+/* Selektor Elemen: Mengubah warna teks semua elemen <p> menjadi merah */
+p {
+    color: red;
+}
+
+/* Selektor Kelas: Mengubah latar belakang dari div dengan kelas "container" menjadi kuning */
+.container {
+    background-color: yellow;
+}
+
+/* Selektor ID: Mengubah warna teks dan ukuran font paragraf dengan ID "highlight" */
+#highlight {
+    color: orange;
+    font-size: 20px;
+}
+
+/* Selektor Atribut: Mengubah warna teks tautan <a> menjadi biru saat di-hover */
+a:hover {
+    color: blue;
+}
+
+/* Aturan CSS untuk Box Model */
+#boxModel {
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 15px;
+    background-color: #e0e0e0;
+}
+
+/* Aturan CSS untuk Flexbox */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.item {
+    padding: 10px;
+    border: 2px solid gray;
+    background-color: #f9f9f9;
+}
+
+/* Font Styles untuk <h2> */
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Background untuk paragraf dengan kelas "background-example" */
+.background-example {
+    background-image: url('your-image-url.jpg'); /* Ganti dengan URL gambar yang sesuai */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px; /* Padding untuk ruang di dalam paragraf */
+    color: white; /* Warna teks untuk kontras dengan background */
+}
+
+/* Styling untuk div dengan kelas "advanced-style" */
+.advanced-style {
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, blue, purple);
+    padding: 20px; /* Padding di dalam div */
+    color: white; /* Warna teks untuk kontras dengan background */
+}
+
+/* Media Query untuk layar dengan lebar kurang dari 600px */
+@media (max-width: 600px) {
+    /* Ubah tata letak elemen dalam flex-container menjadi kolom */
+    .flex-container {
+        flex-direction: column;
+        align-items: stretch; /* Mengatur elemen anak untuk mengisi lebar kontainer */
+    }
+
+    /* Ubah ukuran font heading <h2> dan latar belakang halaman */
+    h2 {
+        font-size: 24px;
+    }
+
+    body {
+        background-color: #e0f7fa; /* Latar belakang halaman menjadi biru muda */
+    }
+}
